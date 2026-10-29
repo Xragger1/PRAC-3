@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Afya Bora Hospital</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Section */
+        header{
+            background-color: #0077b6;
+            color: white;
+            padding: 15px;
+        }
+
+        .logo{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            display:flex;
+        }
+
+        nav ul li{
+            position:relative;
+            margin-right:20px;
+            padding:10px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+        }
+
+        /* Hide ordered lists */
+        nav ul li ol{
+            display:none;
+            position:absolute;
+            background:white;
+            color:black;
+            padding:10px;
+            width:180px;
+        }
+
+        /* Show on hover */
+        nav ul li:hover ol{
+            display:block;
+        }
+
+        nav ul li ol li{
+            margin:5px 0;
+        }
+
+        nav ul li ol li a{
+            color:black;
+            text-decoration:none;
+        }
+
+        /* Main Body */
+        main{
+            background-color:#f0f8ff;
+            padding:20px;
+            min-height:400px;
+        }
+
+        form{
+            width:400px;
+        }
+
+        input, select{
+            width:100%;
+            padding:8px;
+            margin-top:5px;
+            margin-bottom:10px;
+        }
+
+        input[type="submit"]{
+            background:green;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        /* Footer */
+        footer{
+            background-color:#003049;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header>
+
+    <div class="logo">
+        🏥 AFYA BORA HOSPITAL
+    </div>
+
+    <nav>
+        <ul>
+
+            <li><a href="hospital.html">Home</a></li>
+
+            <li>
+                <a href="#">Departments</a>
+
+                <ol>
+                    <li><a href="cardiology.html">Cardiology</a></li>
+                    <li><a href="pediatrics.html">Pediatrics</a></li>
+                </ol>
+            </li>
+
+            <li>
+                <a href="#">Services Offered</a>
+
+                <ol>
+                    <li><a href="laboratory.html">Laboratory Services</a></li>
+                    <li><a href="pharmacy.html">Pharmacy Services</a></li>
+                </ol>
+            </li>
+
+            <li>
+                <a href="#">Careers</a>
+
+                <ol>
+                    <li><a href="doctor.html">Doctor Vacancies</a></li>
+                    <li><a href="nurse.html">Nurse Vacancies</a></li>
+                </ol>
+            </li>
+
+        </ul>
+    </nav>
+
+</header>
+
+<!-- Main Body Section -->
+<main>
+
+    <h2>Welcome to Afya Bora Hospital</h2>
+
+    <p>
+        Afya Bora Hospital was founded in 2022 to address the growing need for
+        accessible, high-quality healthcare services in the rapidly expanding
+        region. Our history is rooted in a commitment to community well-being
+        and a vision for a healthier future.
+    </p>
+
+    <h3>Patient Registration Form</h3>
+
+    <form>
+
+        <label>First Name</label>
+        <input type="text" required>
+
+        <label>Last Name</label>
+        <input type="text" required>
+
+        <label>ID Number</label>
+        <input type="text" required>
+
+        <label>Gender</label>
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <label>Diagnosis</label>
+        <input type="text">
+
+        <label>Drug</label>
+        <input type="text">
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</main>
+
+<!-- Footer -->
+<footer>
+
+    <p>Phone: +254 700 123 456</p>
+    <p>Email: info@afyabora.com</p>
+    <p>P.O. Box 100-00100 Nairobi</p>
+
+    <marquee>Quick recovery</marquee>
+
+</footer>
+
+</body>
+</html>
